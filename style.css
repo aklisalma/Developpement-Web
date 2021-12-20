@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Nav css */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffde59;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 7px 10px;
+    z-index: 1;
+  }
+  .dropdown-content a{
+      margin-top: 10px;
+  }
+  .dropdown-content a:hover{
+      width: 100%;
+      background-color: #191b27;
+      color: #ffde59;
+      padding-top: 6px;
+      padding-bottom: 6px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    
+    flex-direction:column
+  }
+nav{
+    display: flex;
+    background-color: #ffde59;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* pour fixer nav au top  */
+    position: sticky;
+    top: 0;
+}
+nav img{
+    width: 180px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Navigation{
+    margin-right: 30px;
+    font-size: 22px;
+    color: #191b27;
+}
+.Navigation a{
+    text-decoration: none;
+    color: #191b27;
+}
+.Actif{
+    color: #004aad !important;
+}
+/* Header */
+header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Images/Backgrounds/web.png);
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.accueil{
+    width: 100%;
+    min-height: 100vh;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.3925945378151261) 0%, rgba(0,0,0,0.8687850140056023) 97%), url(Images/Backgrounds/BG1.jpg);
+    background-color: #191b27;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+/* Titre et Noms */
+.Titre{
+    color: white;
+    margin: auto;
+    font-size: 2.125rem;
+}
+.Noms{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.Titre a{
+        text-decoration: none;
+        margin: 10px;
+        background-color: #ffde59;
+        color: #191b27;
+        padding-right: 6px;
+        padding-left: 6px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 22px;
+        border-radius: 6px;
+        text-align: center;
+}
+.Contenue img{
+    width: 400px;
+}
+.textcontent{
+    width: 640px;
+}
+.Contenue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+    color: rgb(202, 197, 197);
+    /* text-align: justify; */
+    font-size: 20px;
+    line-height: 30px;
+    flex-wrap: wrap;
+    min-height: 70vh;
+}
+.titlecontent{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* justify-content: center; */
+    background-color: #ffde59;
+}
+.titlecontent h1{
+    /* background-color: #ffde59; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    color: #191b27;
+    /* width: 100%; */
+}
+.textcontent ul{
+    margin-top: 20px;
+}
+.textcontent ul li{
+    margin-top: 7px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #ffde59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 16px 16px rgba(0,0,0,0.2);
+}
+@media screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        min-height: 100vh;
+        background-color: #191b27;
+    }
+    .Masquer{
+        display: none;
+    }
+    nav img {
+        width: 100px;
+    }
+    .Navigation {
+        font-size: 16px;
+    }
+    .accueil{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(Images/Backgrounds/mobile.png);
+    }
+    .Titre{
+        font-size: 20px;
+    }
+    .Titre h1{
+        margin-left: 10px;
+   }
+   .Contenue img {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .Contenue {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+        width: 90%;
+        color: rgb(202, 197, 197);
+        font-size: 20px;
+        line-height: 30px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .textcontent {
+        width: auto;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .textcontent ul li {
+        margin-top: 7px;
+        margin: 15px;
+    }
+  }
